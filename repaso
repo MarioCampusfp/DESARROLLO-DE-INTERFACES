@@ -1,0 +1,121 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // funcion que pida dos numeros y realice las cuatro operaciones basicas
+        static int DosNumero() 
+        {
+            int suma;
+            int resta;
+            int multiplicacion;
+            int division;
+            int numero1;
+            int numero2;
+            
+            Console.WriteLine("Ingrese el primer numero: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero: ");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+            suma = numero1 + numero2;
+            resta = numero1 - numero2;
+            multiplicacion = numero1 * numero2;
+            division = numero1 / numero2;
+            Console.WriteLine("La suma es: " + suma);
+            Console.WriteLine("La resta es: " + resta);
+            Console.WriteLine("La multiplicacion es: " + multiplicacion);
+            Console.WriteLine("La division es: " + division);
+        }
+        // funcion que pida el nombre y salude
+        static String Saludo() 
+        {
+            String nombre;
+            Console.WriteLine("Ingrese su nombre: ");
+            nombre = Console.ReadLine();
+            Console.WriteLine("Hola " + nombre + " bienvenido al programa");
+            return nombre;
+        }
+        // funcion que pita tu edad y la muestre en meses
+        static int EdadEnMeses() 
+        {
+            int edad;
+            int edadMeses;
+            Console.WriteLine("Ingrese su edad: ");
+            edad = Convert.ToInt32(Console.ReadLine());
+            edadMeses = edad * 12;
+            Console.WriteLine("Su edad en meses es: " + edadMeses);
+            return edadMeses;
+        }
+        //funcion que pida 2 numeros y muestre el mayor
+        static int MayordeDos()
+        {
+            int numero1;
+            int numero2;
+            Console.WriteLine("Ingrese el primer numero: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+            if (numero1 > numero2) {
+                Console.WriteLine("el mayor es: " + numero1);
+            }
+            else if (numero2 > numero1) {
+                Console.WriteLine("el mayor es: " + numero2);
+            }
+            else {
+                Console.WriteLine("los numeros son iguales");
+            }
+        }
+        //funcion que pida un numero y te diga si estas aprobado o no
+        static String Aprobado()
+        {
+            int nota;
+            Console.WriteLine("Ingrese su nota: ");
+            nota = Convert.ToInt32(Console.ReadLine());
+            if ( nota >= 5)
+            {
+                Console.WriteLine("estar aprobado");
+            }
+            else
+            {
+                Console.WriteLine("estas suspendido");
+            }
+        }
+        //funcion que pida un numero y te diga si es par o impar
+        static String ParoImpar()
+        {
+            int numero;
+            Console.WriteLine("Ingrese su numero: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+            if (numero%2==0)
+            {
+                Console.WriteLine("es par");
+            }
+            else
+            {
+                 Console.WriteLine("es impar");
+            }
+        }
+        //fubcuion que pida el nombre de un coredor y pida el tiempo de tres carreras y calcula el promedio
+        static String Carrera()
+        {
+            String nombre;
+            int tiempo1;
+            int tiempo2;
+            int tiempo3;
+            int promedio;
+
+            Console.WriteLine("ingrese el nombre del corredor: ");
+            nombre = Console.ReadLine();
+            Console.WriteLine("ingrese el tiempo de la primera carrera: ");
+            tiempo1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ingrese el tiempo de la segunda carrera: ");
+            tiempo2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ingrese el tiempo de la tercera carrera: ");
+            tiempo3 = Convert.ToInt32(Console.ReadLine());
+            promedio = (tiempo1 + tiempo2 + tiempo3) / 3;
+            Console.WriteLine("Hola " + nombre + " tu tiempo medio es: " + promedio);
+        }
+        //Poo 
+    }
+}
